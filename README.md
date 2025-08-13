@@ -4,7 +4,7 @@ Rust bindings for Nordic Semiconductor nRF series SoftDevices.
 
 SoftDevices are a closed source C binary written by Nordic for their microcontrollers that sits at the bottom of flash and is called first on startup. The softdevice then calls your application or bootloader or whatever is sitting directly after it in flash.
 
-They are full featured, battle tested, and pre qualified for bluetooth certification and thus make valuable bluetooth stacks when bindgened to Rust -- at least until we get a Rust bluetooth stack certified to be shipped commercially. Different SoftDevices support specific chips as well as certain features, like working only as a peripheral, or both a peripheral and central, or even offer alternate radio configuration like ant.
+They are full featured, battle tested, and pre qualified for bluetooth certification and thus make valuable bluetooth stacks when binding to Rust -- at least until we get a Rust bluetooth stack certified to be shipped commercially. Different SoftDevices support specific chips as well as certain features, like working only as a peripheral, or both a peripheral and central, or even offer alternate radio configuration like ant.
 
 Besides the handicap of being closed source, the cost of SoftDevices is they steal away resources like ram and flash as well as timer peripherals and several priorities of interrupts from your application.
 
